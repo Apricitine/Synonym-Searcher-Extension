@@ -11,3 +11,11 @@ textInputTag.addEventListener("input", userInput => {
 submitTextTag.addEventListener("click", () => {
   window.open(`https://www.google.com/search?q=${submittedValue}%20synonym`);
 });
+
+function enterText(e) {
+  if (e.code === "Enter") {
+    window.open(`https://www.google.com/search?q=${submittedValue}%20synonym`);
+  }
+}
+document.onkeydown = enterText;
+
