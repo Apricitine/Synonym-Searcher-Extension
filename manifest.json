@@ -5,5 +5,10 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "assets/synonym-search-icon.png",
+    "48": "assets/synonym-search-icon.png",
+    "128": "assets/synonym-search-icon.png"
   }
 }
