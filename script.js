@@ -3,6 +3,7 @@ const submitTextTag = document.querySelector("[Submit-Input]");
 let submittedValue = null;
 console.log(`${textInputTag}`);
 
+textInputTag.focus();
 textInputTag.addEventListener("input", userInput => {
   submittedValue = userInput.target.value;
   console.log(submittedValue);
