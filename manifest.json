@@ -1,7 +1,7 @@
 {
   "name": "Synonym Searcher",
   "description": "Easily search synonyms with the supa dupa Synonym Searcher Extension!",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html"
