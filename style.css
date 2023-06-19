@@ -1,28 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
+
+body {
+  background: linear-gradient(rgb(176, 245, 148), rgb(247, 234, 124));
+  padding: 10%;
+}
+
 .align-title-center {
   display: flex;
   justify-content: center;
 }
 
+h1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+  margin-bottom: 50px
+}
+
 * {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-button {
-  background-color: lightslategray;
-  border: none;
-  color: white;
-  transition: background-color 0.75s, color 0.75s;
-  display: flex;
-  justify-content: center;
-}
-
-button:hover {
-  background: lightgray;
-  color: black;
+  margin: 0;
+  font-family: Nunito;
 }
 
 input {
   border-width: 5px 5px;
   border-radius: 10px;
   margin-bottom: 5%;
+  border: dotted;
+  background: transparent;
+  padding: 2.5%;
 }

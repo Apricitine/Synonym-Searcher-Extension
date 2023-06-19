@@ -1,22 +1,19 @@
 const textInputTag = document.querySelector("[Text-Input]");
-const submitTextTag = document.querySelector("[Submit-Input]");
-let submittedValue = null;
+let submittedValue:string;
 console.log(`${textInputTag}`);
-
+// @ts-ignore
 textInputTag.focus();
+// @ts-ignore
 textInputTag.addEventListener("input", userInput => {
+  // @ts-ignore
   submittedValue = userInput.target.value;
   console.log(submittedValue);
   return submittedValue;
 });
-submitTextTag.addEventListener("click", () => {
-  window.open(`https://www.google.com/search?q=${submittedValue}%20synonym`);
-});
-
+// @ts-ignore
 function enterText(e) {
   if (e.code === "Enter") {
     window.open(`https://www.google.com/search?q=${submittedValue}%20synonym`);
   }
 }
 document.onkeydown = enterText;
-
